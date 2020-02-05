@@ -2,9 +2,10 @@
   "name": "proxy-reviews",
   "version": "1.0.0",
   "description": "> Project description",
-  "main": "index.js",
+  "start": "server",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-proxy": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/coupon-app/proxy-reviews/issues"
   },
-  "homepage": "https://github.com/coupon-app/proxy-reviews#readme"
+  "homepage": "https://github.com/coupon-app/proxy-reviews#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
