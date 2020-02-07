@@ -13,7 +13,7 @@ const routesDescription = [
     urlRedirect: '34.216.202.137',
   },
   {
-    urlEntry: '/images',
+    urlEntry: '/products',
     urlEndpoint: '/api/products',
     urlRedirect: '35.162.182.188'
   },

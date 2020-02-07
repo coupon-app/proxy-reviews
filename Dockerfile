@@ -17,4 +17,4 @@ RUN npm install --only=prod
 EXPOSE 80
 
 # How do you start your app?
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "start" ]
