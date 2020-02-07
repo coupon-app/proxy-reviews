@@ -10,7 +10,7 @@ const routesDescription = [
   {
     urlEntry: '/reviews',
     urlEndpoint: '/api/reviews',
-    urlRedirect: '34.216.202.137',
+    urlRedirect: 'service-reviews.duckdns.org',
   },
   {
     urlEntry: '/products',
