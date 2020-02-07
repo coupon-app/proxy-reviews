@@ -5,7 +5,8 @@
   "start": "server",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-proxy": "nodemon server"
+    "start-dev": "nodemon server",
+    "start": "node server"
   },
   "repository": {
     "type": "git",

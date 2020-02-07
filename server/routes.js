@@ -5,17 +5,17 @@ const express = require('express');
 const axios = require('axios');
 let router = express.Router();
 
-// Create a variable to store details of app services endpoints and EC2 ip addresses
+// Create a variable to store details of app services endpoints and Dynamic DNS/EC2 addresses
 const routesDescription = [
   {
     urlEntry: '/reviews',
     urlEndpoint: '/api/reviews',
-    urlRedirect: '34.216.202.137',
+    urlRedirect: 'service-reviews.duckdns.org',
   },
   {
-    urlEntry: '/images',
+    urlEntry: '/products',
     urlEndpoint: '/api/products',
-    urlRedirect: '35.162.182.188'
+    urlRedirect: 'carousel.duckdns.org'
   },
   {
     urlEntry: '/checkout',
