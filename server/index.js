@@ -4,6 +4,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
+const compression = require('compression')
 
 const app = express();
 const api_router = require('./routes');
@@ -17,6 +18,7 @@ const DIR_PUBLIC = process.env.DIR_PUBLIC || 'public';
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.static(DIR_PUBLIC));
+app.use(compression());
 
 // Handle requests to /api/* to be handled by 'api_router'
 app.use('/api', api_router);
