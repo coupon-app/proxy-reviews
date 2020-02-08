@@ -4,6 +4,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
+const compression = require('compression')
 
 const app = express();
 const api_router = require('./routes');
@@ -15,6 +16,7 @@ const DIR_PUBLIC = process.env.DIR_PUBLIC || 'public';
 // ///////////////////////////////////////////////////////////////////////////////////////
 
 app.use(morgan('dev'));
+app.use(compression());
 app.use(express.json());
 app.use(express.static(DIR_PUBLIC));
 
