@@ -20,7 +20,7 @@ const routesDescription = [
   {
     urlEntry: '/checkout',
     urlEndpoint: '/api/checkout',
-    urlRedirect: '18.188.34.11:3003'
+    urlRedirect: 'checkout.duckdns.org'
   }
 ]
 
