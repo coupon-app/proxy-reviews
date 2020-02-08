@@ -8,7 +8,7 @@ const compression = require('compression')
 
 const app = express();
 const api_router = require('./routes');
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3000;
 const DIR_PUBLIC = process.env.DIR_PUBLIC || 'public';
 
 // ///////////////////////////////////////////////////////////////////////////////////////
