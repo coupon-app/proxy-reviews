@@ -16,6 +16,9 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      position: absolute;
+      top: 300px;
+      left: 70px;
     }
 
     .column {
@@ -31,10 +34,27 @@
       padding-left: 1em;
       border-left: 1px solid rgb(230, 231, 232);
     }
+
+    .navbar {
+      display: felx;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .nav-image {
+      margin: auto;
+      min-height: 100%;
+      width: 100%;
+    }
   </style>
 </head>
 
 <body>
+  <div class="navbar">
+    <img class="nav-image" src="assets/GrouponNavBar.png">
+  </div>
   <div class="container">
     <div class="column">
       <div id="carousel">
@@ -50,9 +70,11 @@
       </div>
     </div>
   </div>
+
   <script defer src="https://ghrsea07.s3-us-west-2.amazonaws.com/reviews-bundle.js"></script>
   <script defer src="https://carousel-bundle.s3-us-west-2.amazonaws.com/bundle.js"></script>
   <script defer src="https://checkoutbundle.s3.us-east-2.amazonaws.com/bundle.js"></script>
+
 </body>
 
 </html>
